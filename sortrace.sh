@@ -5,7 +5,7 @@
 #		$ rm sortrace.log		# start with fresh log file
 #		$ sortrace.sh >> sortrace.log &
 ###########################################################
-echo Generating 100000 random numbers
+echo Generating 1000000 random numbers
 sleep 1
 ./generate 1000000 100000 999999  # you have to write generate.cpp
 sleep 1
