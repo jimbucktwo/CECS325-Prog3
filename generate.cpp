@@ -23,9 +23,9 @@ int main(int argc, char *argv[]) {
     int max = stoi(argv[3]);
 
     ofstream fout;
-    fout.open("numbers.txt", ios::out);
+    fout.open("numbers.dat", ios::out);
     for (int i = 0; i < count; i++) {
-        fout << (rand() % (max - min + 1) + min);
+        fout << (rand() % (max - min + 1) + min) << endl;
     }
     fout.close();
     return 0;
