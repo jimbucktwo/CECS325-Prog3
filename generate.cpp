@@ -1,8 +1,18 @@
+//Jimmy Tran
+// Class (CECS 325-02)
+// Prog 3 Bubblesort
+// 10/10/23
+//
+// I certify that this program is my own original work. I did not copy any part of this program from
+// any other source. I further certify that I typed each and every line of code in this program.
+
 #include <iostream>
 #include <fstream>
 using namespace std;
 
+
 int main(int argc, char *argv[]) {
+    //makes sure user enters the correct amount of arguments
     if (argc < 4)
     {
         cout << "Please enter 3 parameters:\n";
@@ -14,6 +24,7 @@ int main(int argc, char *argv[]) {
 
     }
 
+    // prints the arguments used
     for (int i=0; i<argc; i++){
         cout << "argv["<<i<<"]: "<<argv[i] << endl;
     }
@@ -22,6 +33,7 @@ int main(int argc, char *argv[]) {
     int min = stoi(argv[2]);
     int max = stoi(argv[3]);
 
+    // writes the random numbers generate to new file called numbers.dat
     ofstream fout;
     fout.open("numbers.dat", ios::out);
     for (int i = 0; i < count; i++) {
